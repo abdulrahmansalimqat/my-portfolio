@@ -170,7 +170,11 @@
             return `
                 <div class="form-group">
                     <label>${label}</label>
-                    <input type="text" data-path="${keyPath}" value="${val}" dir="ltr">
+                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                        <img src="${val}" alt="Preview" style="width: 50px; height: 50px; border-radius: 5px; object-fit: cover; border: 1px solid rgba(255,255,255,0.2);">
+                        <input type="file" accept="image/*" onchange="handleImageUpload(event, '${keyPath}')" style="width: 100%;">
+                    </div>
+                    <input type="hidden" data-path="${keyPath}" id="input-${keyPath.replace('.', '-')}" value="${val}">
                 </div>
             `;
         }
@@ -211,6 +215,26 @@
             html += `</div>`;
 
             formContainer.innerHTML = html;
+        }
+
+        // Handle File Upload and Convert to Base64
+        function handleImageUpload(event, keyPath) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const base64String = e.target.result;
+                    // Update the hidden input with the base64 string
+                    document.getElementById(`input-${keyPath.replace('.', '-')}`).value = base64String;
+                    
+                    // Update the preview image
+                    const imgPreview = event.target.previousElementSibling;
+                    if(imgPreview && imgPreview.tagName === 'IMG') {
+                        imgPreview.src = base64String;
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
         }
 
         function exportJSON() {
