@@ -214,7 +214,119 @@
             html += createInputGroup('about.education_text', 'التعليم', siteData.about.education_text.ar, siteData.about.education_text.tr, true);
             html += `</div>`;
 
+            // --- Portfolio Gallery Section ---
+            html += `<div class="section-box" id="portfolio-manager"><h2>معرض الأعمال (الصور والمشاريع)</h2>`;
+            html += `<div id="portfolio-items-container"></div>`;
+            html += `<button type="button" onclick="addPortfolioItem()" style="background: #28a745; margin-bottom: 20px;">➕ إضافة عمل جديد للمعرض</button>`;
+            html += `</div>`;
+
             formContainer.innerHTML = html;
+            renderPortfolioItems();
+        }
+
+        function renderPortfolioItems() {
+            const container = document.getElementById('portfolio-items-container');
+            if(!container) return;
+            
+            let html = '';
+            const items = siteData.portfolio.items || [];
+            
+            items.forEach((item, index) => {
+                html += `
+                <div style="border: 1px dashed rgba(255,255,255,0.3); padding: 15px; margin-bottom: 15px; position: relative;">
+                    <button type="button" onclick="removePortfolioItem(${index})" style="position: absolute; top: 10px; left: 10px; background: #dc3545; color: white; border: none; padding: 5px 10px; width: auto; font-size: 0.8rem; margin: 0;">❌ حذف</button>
+                    <h4>العمل رقم (${index + 1})</h4>
+                    
+                    <div class="form-group">
+                        <label>صورة العمل</label>
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <img src="${item.image}" alt="Preview" style="width: 50px; height: 50px; border-radius: 5px; object-fit: cover; border: 1px solid rgba(255,255,255,0.2);">
+                            <input type="file" accept="image/*" onchange="handleArrayImageUpload(event, ${index})" style="width: 100%;">
+                        </div>
+                        <input type="hidden" id="port-img-${index}" data-array-path="portfolio.items.${index}.image" value="${item.image}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>الفلتر (التصنيف)</label>
+                        <select data-array-path="portfolio.items.${index}.category" style="padding: 10px; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px;">
+                            <option value="social" ${item.category === 'social' ? 'selected' : ''}>سوشيال ميديا (social)</option>
+                            <option value="uiux" ${item.category === 'uiux' ? 'selected' : ''}>واجهات وتطبيقات (uiux)</option>
+                        </select>
+                    </div>
+
+                    <div class="lang-split">
+                         <div>
+                            <small>العنوان (AR)</small><br>
+                            <input type="text" data-array-path="portfolio.items.${index}.title.ar" value="${item.title.ar}" dir="rtl" style="width: 90%;">
+                        </div>
+                        <div>
+                            <small>العنوان (TR)</small><br>
+                            <input type="text" data-array-path="portfolio.items.${index}.title.tr" value="${item.title.tr}" dir="ltr" style="width: 90%;">
+                        </div>
+                    </div>
+                    
+                    <div class="lang-split" style="margin-top: 10px;">
+                         <div>
+                            <small>الوصف الفرعي (AR)</small><br>
+                            <input type="text" data-array-path="portfolio.items.${index}.subtitle.ar" value="${item.subtitle.ar}" dir="rtl" style="width: 90%;">
+                        </div>
+                        <div>
+                            <small>الوصف الفرعي (TR)</small><br>
+                            <input type="text" data-array-path="portfolio.items.${index}.subtitle.tr" value="${item.subtitle.tr}" dir="ltr" style="width: 90%;">
+                        </div>
+                    </div>
+                </div>`;
+            });
+            container.innerHTML = html;
+        }
+
+        // Handle Array File Upload
+        function handleArrayImageUpload(event, index) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const base64String = e.target.result;
+                    document.getElementById(`port-img-${index}`).value = base64String;
+                    const imgPreview = event.target.previousElementSibling;
+                    if(imgPreview && imgPreview.tagName === 'IMG') {
+                        imgPreview.src = base64String;
+                    }
+                    // Update array live to not lose on re-render
+                    siteData.portfolio.items[index].image = base64String;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function addPortfolioItem() {
+            syncArrayInputsToData(); // Save current before re-rendering
+            if(!siteData.portfolio.items) siteData.portfolio.items = [];
+            siteData.portfolio.items.push({
+                id: "item_" + Date.now(),
+                category: "social",
+                image: "",
+                title: { ar: "عنوان جديد", tr: "Yeni Başlık" },
+                subtitle: { ar: "وصف فرعي", tr: "Alt Başlık" }
+            });
+            renderPortfolioItems();
+        }
+
+        function removePortfolioItem(index) {
+            if(confirm('هل أنت متأكد من حذف هذا العمل؟')) {
+                syncArrayInputsToData();
+                siteData.portfolio.items.splice(index, 1);
+                renderPortfolioItems();
+            }
+        }
+
+        // Helper to grab live inputs before re-rendering chunks
+        function syncArrayInputsToData() {
+            const arrayInputs = document.querySelectorAll('[data-array-path]');
+            arrayInputs.forEach(input => {
+                const path = input.getAttribute('data-array-path');
+                setNestedValue(siteData, path, input.value);
+            });
         }
 
         // Handle File Upload and Convert to Base64
@@ -238,7 +350,10 @@
         }
 
         function exportJSON() {
-            // Collect all inputs with data-path
+            // First sync any array inputs
+            try { syncArrayInputsToData(); } catch(e){}
+
+            // Collect all normal inputs with data-path
             const inputs = document.querySelectorAll('[data-path]');
             let newData = JSON.parse(JSON.stringify(siteData)); // Deep copy
 
