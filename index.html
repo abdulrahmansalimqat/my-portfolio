@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdurrahman Selim Qat | Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../شعاري الخاص .png">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../شعاري الخاص .png" alt="Özel Logo" class="nav-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" id="nav-home">Ana Sayfa</a></li>
+            <li><a href="#about" id="nav-about">Hakkımda</a></li>
+            <li><a href="#experience" id="nav-experience">Deneyimler</a></li>
+            <li><a href="#books" id="nav-books">Yayınlar</a></li>
+            <li><a href="#portfolio" id="nav-portfolio">Portföy</a></li>
+            <li><a href="index_ar.html" class="lang-switch">AR</a></li>
+            <li><button class="theme-toggle" id="themeToggle" aria-label="Temayı Değiştir"><i class="fas fa-moon"></i></button></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h3 class="greeting" id="hero-greeting">Merhaba, Ben</h3>
+            <h1 class="name" id="hero-name">Abdurrahman <span>Selim Qat</span></h1>
+            <h2 class="title" id="hero-title">Grafik Tasarımcı | Yaratıcı Yazar | Otomasyon ve Siber Güvenlik Öğrencisi</h2>
+            <p class="description" id="hero-desc">
+                Tasarım ve yazıyı teknolojiyle birleştiriyorum. Şu anda yapay zeka otomasyonu ve programlaması ile siber güvenlik öğreniyor, yakında duyurulacak farklı projeler geliştiriyorum.
+            </p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary"><span id="hero-cta1">Çalışmalarımı İncele</span> <i class="fas fa-arrow-right"></i></a>
+                <a href="#about" class="btn btn-secondary" id="hero-cta2">Beni Yakından Tanı</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="hero-image-container reveal-right">
+            <div class="image-wrapper">
+                <img src="../صورتي الشخصية .png" alt="Abdurrahman Selim Qat" class="hero-img" id="cms-hero-img">
+                <div class="experience-badge">
+                    <span class="number" id="hero-exp-num">+3</span>
+                    <span class="text" id="hero-exp-text">Yıllık<br>Deneyim</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="section-title reveal">
+            <h2><span id="about-sec-title">Kariyerim</span> <span id="about-sec-high">Hakkında</span></h2>
+            <p id="about-sec-sub">Ben Kimim ve Ne Sunuyorum</p>
+        </div>
+        <div class="about-container">
+            <div class="about-text glass-card reveal">
+                <h3 id="about-sum-title">Profesyonel Özet</h3>
+                <p id="about-sum-text">
+                    Rtext eğitim şirketinde sosyal medya tasarımlarında uzman grafik tasarımcı olarak 3 yıl çalıştım. Türkiye'de Arapça kitapların online satışı için bir kitaplık kurdum. Son yıllarda 50'den fazla kişi ve ailelerine istemsiz sendromlarla ilgili deneyimlerini iyileştirme konusunda destek oldum. Şu anda yapay zeka otomasyonu ve programlaması ile siber güvenlik öğreniyor, ayrıca Farsça ve Rusça çalışıyorum.
+                </p>
+                
+                <div class="education">
+                    <h4><i class="fas fa-graduation-cap"></i> <span id="about-edu-title">Eğitim</span></h4>
+                    <p id="about-edu-text">Grafik Tasarımı Lisans | <strong>İstanbul Yeni Yüzyıl Üniversitesi</strong> (Devam Ediyor).</p>
+                </div>
+            </div>
+
+            <div class="skills-languages grid-2 reveal-right">
+                <div class="skills glass-card">
+                    <h3><i class="fas fa-tools"></i> <span id="about-skill-title">Teknik Beceriler</span></h3>
+                    <ul class="skill-list" id="cms-skill-list">
+                        <!-- Dynamic Skills Will Be Generated Here -->
+                    </ul>
+                </div>
+                
+                <div class="languages glass-card">
+                    <h3><i class="fas fa-globe"></i> <span id="about-lang-title">Diller</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-item">
+                            <i class="fas fa-language"></i>
+                            <span class="lang-name">Arapça (Anadil)</span>
+                        </div>
+                        <div class="lang-item">
+                            <i class="fas fa-language"></i>
+                            <span class="lang-name">Türkçe (İleri Düzey - Yaratıcı Üretim)</span>
+                        </div>
+                        <div class="lang-item learning">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span class="lang-name">Öğreniyor: Farsça, Rusça</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="section-title reveal">
+            <h2><span id="exp-sec-title">İş</span> <span id="exp-sec-high">Deneyimi</span></h2>
+            <p id="exp-sec-sub">Kariyer Yolculuğum ve Öncü Projeler</p>
+        </div>
+        <div class="timeline" id="cms-timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">3 Yıl</span>
+                    <h3>Eğitim Hizmetlerinde Tasarımcı</h3>
+                    <h4>Rtext Şirketi</h4>
+                    <p>3 yıl boyunca sosyal medya tasarımcısı olarak çalıştım.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">Girişimcilik Projesi</span>
+                    <h3>Arapça Kitap Satış Platformu Kurucusu</h3>
+                    <h4>Türkiye</h4>
+                    <p>Türkiye toplumunda kültürel içeriği desteklemek ve kitaplar aracıyla kültürel bir köprü kurmak amacıyla Arap edebiyatı satış ve dağıtım platformunu yönetmek.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">2021 - Başarı</span>
+                    <h3>Kuluçka Merkezi Yarışması & Eğitim</h3>
+                    <h4>Habitat Derneği</h4>
+                    <p>Projem yenilikçi kriterlere dayalı olarak finale kalan en iyi 40 proje arasına seçildi. Ayrıca, proje geliştirme konusunda yoğun eğitimleri tamamladım.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books / Publications Section -->
+    <section id="books" class="books section">
+        <div class="section-title reveal">
+            <h2><span id="books-sec-title">Edebi</span> <span id="books-sec-high">Eserler</span></h2>
+            <p id="books-sec-sub">Kitaplarım ve Yayınlarım</p>
+        </div>
+        <div class="books-container reveal">
+            <div class="books-image">
+                <img src="../صور كتبي .png" alt="Kitaplarım" class="glass-img" id="cms-books-img">
+            </div>
+            <div class="books-list" id="cms-books-list">
+                <div class="book-item glass-card card-hover">
+                    <i class="fas fa-book book-icon"></i>
+                    <div class="book-info">
+                        <h3>Tourette Sendromu Farkındalığı</h3>
+                        <p>Bu sendrom ve etkileri hakkında toplumsal farkındalığı artırmaya yönelik iki kitabın (Arapça) yazarıyım.</p>
+                    </div>
+                </div>
+                
+                <div class="book-item glass-card card-hover">
+                    <i class="fas fa-book-open book-icon"></i>
+                    <div class="book-info">
+                        <h3>Yoldaşımsın</h3>
+                        <p>Türkçe dilindeki ilk yayınım (yayın aşamasında), ev sahibi toplumla edebi iletişim kurma yönünde bir adımı temsil ediyor.</p>
+                    </div>
+                </div>
+
+                <div class="book-item glass-card card-hover">
+                    <i class="fas fa-robot book-icon"></i>
+                    <div class="book-info">
+                        <h3>Yapay Zeka Devrimi</h3>
+                        <p>Modern teknolojik dönüşümleri ve bunların bugünümüze ve geleceğimize etkilerini inceleyen bir kitap çalışması.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="section-title reveal">
+            <h2><span id="port-sec-title">Portföy &</span> <span id="port-sec-high">Çalışmalarım</span></h2>
+            <p id="port-sec-sub">Tasarım Projelerimden Örnekler</p>
+        </div>
+        
+        <div class="portfolio-filter reveal">
+            <button class="filter-btn active" data-filter="all" id="filter-all">Tümü</button>
+            <button class="filter-btn" data-filter="social" id="filter-social">Sosyal Medya</button>
+            <button class="filter-btn" data-filter="uiux" id="filter-ui">Arayüz ve UX</button>
+        </div>
+
+        <div class="portfolio-grid reveal" id="cms-portfolio-grid">
+            <!-- Dynamic Portfolio Items Will Be Generated Here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="../شعاري الخاص .png" alt="Logo" class="footer-logo">
+            <p id="footer-copy">&copy; 2026 Tüm Hakları Saklıdır | Abdurrahman Selim Qat</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

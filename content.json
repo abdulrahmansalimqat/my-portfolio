@@ -1,0 +1,206 @@
+{
+  "site_title": {
+    "ar": "عبد الرحمن سليم قات | الصفحة الشخصية",
+    "tr": "Abdurrahman Selim Qat | Kişisel Web Sitesi"
+  },
+  "navbar": {
+    "home": { "ar": "الرئيسية", "tr": "Ana Sayfa" },
+    "about": { "ar": "عني", "tr": "Hakkımda" },
+    "experience": { "ar": "الخبرات", "tr": "Deneyimler" },
+    "books": { "ar": "المؤلفات", "tr": "Yayınlar" },
+    "portfolio": { "ar": "الأعمال", "tr": "Portföy" }
+  },
+  "hero": {
+    "greeting": { "ar": "مرحباً، أنا", "tr": "Merhaba, Ben" },
+    "name_first": { "ar": "عبد الرحمن", "tr": "Abdurrahman" },
+    "name_last": { "ar": "سليم قات", "tr": "Selim Qat" },
+    "title": {
+      "ar": "مصمم جرافيك | كاتب إبداعي | مهتم بالأتمتة والامن السبراني",
+      "tr": "Grafik Tasarımcı | Yaratıcı Yazar | Otomasyon ve Siber Güvenlik Öğrencisi"
+    },
+    "description": {
+      "ar": "أعمل على دمج التصميم والكتابة مع التقنية. حاليا أتعلم أتمتة الذكاء الاصطناعي وبرمجته، إضافة إلى الامن السبراني، وأطوّر مشاريع مختلفة ستظهر قريبا.",
+      "tr": "Tasarım ve yazıyı teknolojiyle birleştiriyorum. Şu anda yapay zeka otomasyonu ve programlaması ile siber güvenlik öğreniyor, yakında duyurulacak farklı projeler geliştiriyorum."
+    },
+    "cta_primary": { "ar": "شاهد أعمالي", "tr": "Çalışmalarımı İncele" },
+    "cta_secondary": { "ar": "تعرف علي أكثر", "tr": "Beni Yakından Tanı" },
+    "experience_years": { "ar": "+3", "tr": "+3" },
+    "experience_text": { "ar": "سنوات<br>خبرة", "tr": "Yıllık<br>Deneyim" }
+  },
+  "about": {
+    "section_title": { "ar": "عن", "tr": "Kariyerim" },
+    "section_highlight": { "ar": "مسيرتي", "tr": "Hakkında" },
+    "section_subtitle": { "ar": "من أنا وماذا أقدم", "tr": "Ben Kimim ve Ne Sunuyorum" },
+    "summary_title": { "ar": "الملخص المهني", "tr": "Profesyonel Özet" },
+    "summary_text": {
+      "ar": "مصمم جرافيك عملت ثلاث سنوات في شركة Rtext التعليمية متخصصا في تصميمات السوشيال ميديا. أسست مكتبة لبيع الكتب العربية أونلاين في تركيا، وساعدت أكثر من 50 شخصا وعائلاتهم خلال السنوات الماضية في تحسين تجربتهم مع المتلازمات اللارادية. حاليا أتعلم أتمتة الذكاء الاصطناعي وبرمجته، إضافة إلى الامن السبراني، وأتعلم اللغة الفارسية والروسية.",
+      "tr": "Rtext eğitim şirketinde sosyal medya tasarımlarında uzman grafik tasarımcı olarak 3 yıl çalıştım. Türkiye'de Arapça kitapların online satışı için bir kitaplık kurdum. Son yıllarda 50'den fazla kişi ve ailelerine istemsiz sendromlarla ilgili deneyimlerini iyileştirme konusunda destek oldum. Şu anda yapay zeka otomasyonu ve programlaması ile siber güvenlik öğreniyor, ayrıca Farsça ve Rusça çalışıyorum."
+    },
+    "education_title": { "ar": "التعليم", "tr": "Eğitim" },
+    "education_text": {
+      "ar": "بكالوريوس التصميم الجرافيكي | <strong>جامعة إسطنبول يني يوزيل</strong> (قيد الدراسة).",
+      "tr": "Grafik Tasarımı Lisans | <strong>İstanbul Yeni Yüzyıl Üniversitesi</strong> (Devam Ediyor)."
+    },
+    "skills_title": { "ar": "المهارات التقنية", "tr": "Teknik Beceriler" },
+    "skills": [
+      {
+        "name": { "ar": "فوتوشوب", "tr": "Photoshop" },
+        "percent": 50
+      },
+      {
+        "name": { "ar": "امن سبراني", "tr": "Siber Güvenlik" },
+        "percent": 10
+      },
+      {
+        "name": { "ar": "كتابة ابداعية", "tr": "Yaratıcı Yazarlık" },
+        "percent": 75
+      },
+      {
+        "name": { "ar": "كتابة فكرية", "tr": "Düşünsel Yazarlık" },
+        "percent": 60
+      },
+      {
+        "name": { "ar": "التفكير الابداعي (مستوى متقدم)", "tr": "Yaratıcı Düşünme (İleri Seviye)" },
+        "percent": 90
+      }
+    ],
+    "languages_title": { "ar": "اللغات", "tr": "Diller" }
+  },
+  "experience": {
+    "section_title": { "ar": "الخبرة", "tr": "İş" },
+    "section_highlight": { "ar": "العملية", "tr": "Deneyimi" },
+    "section_subtitle": { "ar": "رحلتي المهنية والمشاريع الرائدة", "tr": "Kariyer Yolculuğum ve Öncü Projeler" },
+    "items": [
+      {
+        "date": { "ar": "3 سنوات", "tr": "3 Yıl" },
+        "title": { "ar": "مصمم في خدمات تعليمية", "tr": "Eğitim Hizmetlerinde Tasarımcı" },
+        "company": { "ar": "شركة Rtext", "tr": "Rtext Şirketi" },
+        "description": {
+          "ar": "مصمم سوشيل ميديا لمدة 3 سنوات.",
+          "tr": "3 yıl boyunca sosyal medya tasarımcısı olarak çalıştım."
+        }
+      },
+      {
+        "date": { "ar": "مشروع ريادي", "tr": "Girişimcilik Projesi" },
+        "title": { "ar": "تأسيس مكتبة كتب عربية أونلاين", "tr": "Online Arapça Kitaplık Kurucusu" },
+        "company": { "ar": "تركيا", "tr": "Türkiye" },
+        "description": {
+          "ar": "أسست مكتبة لبيع الكتب العربية عبر الإنترنت داخل تركيا، بهدف تسهيل وصول القارئ العربي للمحتوى الثقافي.",
+          "tr": "Türkiye'de Arapça kitaplara erişimi kolaylaştırmak için online kitap satış girişimi kurdum."
+        }
+      },
+      {
+        "date": { "ar": "خلال السنوات الماضية", "tr": "Son Yıllar" },
+        "title": { "ar": "دعم مجتمعي للمتلازمات اللارادية", "tr": "İstemsiz Sendromlar İçin Toplumsal Destek" },
+        "company": { "ar": "مبادرات فردية", "tr": "Bireysel Girişimler" },
+        "description": {
+          "ar": "ساعدت أكثر من 50 شخصا وعائلاتهم في تحسين تجربتهم مع المتلازمات اللارادية عبر التوعية والدعم العملي.",
+          "tr": "Farkındalık ve pratik destek yoluyla 50'den fazla kişi ve ailelerine istemsiz sendromlarla ilgili süreçlerinde yardımcı oldum."
+        }
+      },
+      {
+        "date": { "ar": "تطوير مهني", "tr": "Mesleki Gelişim" },
+        "title": { "ar": "دورات ريادة أعمال", "tr": "Girişimcilik Eğitimleri" },
+        "company": { "ar": "منظمة هبتتات ومنظمة يونايتد ورك", "tr": "Habitat ve United Work" },
+        "description": {
+          "ar": "أكملت دورات في ريادة الأعمال ضمن برامج منظمة هبتتات ومنظمة يونايتد ورك لتعزيز المهارات العملية وإدارة المشاريع.",
+          "tr": "Habitat ve United Work programları kapsamında girişimcilik eğitimleri alarak uygulamalı becerilerimi ve proje yönetim yetkinliğimi geliştirdim."
+        }
+      }
+    ]
+  },
+  "books": {
+    "section_title": { "ar": "النتاج", "tr": "Edebi" },
+    "section_highlight": { "ar": "الأدبي", "tr": "Eserler" },
+    "section_subtitle": { "ar": "مؤلفاتي وإصداراتي", "tr": "Kitaplarım ve Yayınlarım" },
+    "items": [
+      {
+        "title": { "ar": "التوعية بمتلازمة التشنجات اللاإرادية", "tr": "Tourette Sendromu Farkındalığı" },
+        "description": {
+          "ar": "مؤلف كتابين (باللغة العربية) يهتمان بنشر الوعي المجتمعي حول هذه المتلازمة وتأثيراتها.",
+          "tr": "Bu sendrom ve etkileri hakkında toplumsal farkındalığı artırmaya yönelik iki kitabın (Arapça) yazarıyım."
+        },
+        "icon": "fa-book"
+      },
+      {
+        "title": { "ar": "Yoldaşımsın", "tr": "Yoldaşımsın" },
+        "description": {
+          "ar": "أول إصدار لي باللغة التركية (قيد النشر)، يمثل خطوة نحو التواصل الأدبي مع المجتمع المضيف.",
+          "tr": "Türkçe dilindeki ilk yayınım (yayın aşamasında), ev sahibi toplumla edebi iletişim kurma yönünde bir adımı temsil ediyor."
+        },
+        "icon": "fa-book-open"
+      },
+      {
+        "title": { "ar": "ثورة الذكاء الاصطناعي", "tr": "Yapay Zeka Devrimi" },
+        "description": {
+          "ar": "مؤلف قيد العمل يتناول التحولات التقنية المعاصرة وتأثيرها على حاضرنا ومستقبلنا.",
+          "tr": "Modern teknolojik dönüşümleri ve bunların bugünümüze ve geleceğimize etkilerini inceleyen bir kitap çalışması."
+        },
+        "icon": "fa-robot"
+      }
+    ]
+  },
+  "portfolio": {
+    "section_title": { "ar": "معرض", "tr": "Portföy &" },
+    "section_highlight": { "ar": "الأعمال", "tr": "Çalışmalarım" },
+    "section_subtitle": { "ar": "نماذج من إبداعاتي في التصميم", "tr": "Tasarım Projelerimden Örnekler" },
+    "filter_all": { "ar": "الكل", "tr": "Tümü" },
+    "filter_social": { "ar": "سوشيال ميديا", "tr": "Sosyal Medya" },
+    "filter_uiux": { "ar": "واجهات وتطبيقات", "tr": "Arayüz ve UX" },
+    "items": [
+      {
+        "id": "item_1",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/Rtext/منحة اكثر من 4.png",
+        "title": { "ar": "تصميم إعلاني للمنح", "tr": "Burs Reklam Tasarımı" },
+        "subtitle": { "ar": "حملة Rtext", "tr": "Rtext Kampanyası" }
+      },
+      {
+        "id": "item_2",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/Rtext/تصميم نموذج القبولات 11.png",
+        "title": { "ar": "نموذج قبولات جامعية", "tr": "Üniversite Kabul Şablonu" },
+        "subtitle": { "ar": "Rtext", "tr": "Rtext" }
+      },
+      {
+        "id": "item_3",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/مكتبة القفقاس/كتاب ادب الكاتب  copy.jpg",
+        "title": { "ar": "تصميم غلاف كتاب", "tr": "Kitap Kapağı Tasarımı" },
+        "subtitle": { "ar": "مكتبة القفقاس", "tr": "Kafkas Kitabevi" }
+      },
+      {
+        "id": "item_4",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/Rtext/ادرس طب.png",
+        "title": { "ar": "إعلان \"ادرس طب\"", "tr": "Tıp Oku Kampanyası" },
+        "subtitle": { "ar": "حملات Rtext التعليمية", "tr": "Rtext" }
+      },
+      {
+        "id": "item_5",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/Rtext/دفع الثمن .png",
+        "title": { "ar": "إعلان تفاعلي", "tr": "İnteraktif Reklam" },
+        "subtitle": { "ar": "Rtext", "tr": "Rtext" }
+      },
+      {
+        "id": "item_6",
+        "category": "social",
+        "image": "../جزء من اعمالي/اعمالي تصميمات شوشيل ميديا/مكتبة القفقاس/كتاب رسائل إلى متلاومة التشنجات.jpg",
+        "title": { "ar": "غلاف: رسائل لمتلازمة التشنجات", "tr": "Kapak: Tourette Mektupları" },
+        "subtitle": { "ar": "مكتبة القفقاس", "tr": "Kafkas Kitabevi" }
+      }
+    ]
+  },
+  "footer": {
+    "copyright": {
+      "ar": "© 2026 جميع الحقوق محفوظة | عبد الرحمن سليم قات",
+      "tr": "© 2026 Tüm Hakları Saklıdır | Abdurrahman Selim Qat"
+    }
+  },
+  "images": {
+    "logo": "../شعاري الخاص .png",
+    "hero_img": "../صورتي الشخصية .png",
+    "books_img": "../صور كتبي .png"
+  }
+}
